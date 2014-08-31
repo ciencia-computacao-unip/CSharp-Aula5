@@ -28,6 +28,21 @@ namespace aula5{
                 Console.Write("{0}x{1}={2}\n",numero,x,resultado);
             }
             //fim exercício 2
+			
+			Console.WriteLine("\n\n\n");
+			
+            //início exercício 3
+            Console.WriteLine("3) Escreva um programa que calcule o fatorial de um número informado pelo usuário.\nExemplo: 4! = 1 * 2 * 3 * 4 = 24, portanto o fatorial de 4 é igual a 24.\n");
+            Console.Write("Digite um número: ");
+            int um_numero=0,um_resultado=1;
+            um_numero = int.Parse(Console.ReadLine());
+            Console.Write("\n{0}!=1",um_numero);
+            for (int x = 2; x <= um_numero; x++){
+                um_resultado = um_resultado * x;
+                Console.Write("*{0}", x);
+            }
+            Console.WriteLine("={0}", um_resultado);
+            //fim exercício 3
 
             Console.ReadKey();
         }
