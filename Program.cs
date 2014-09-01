@@ -44,6 +44,28 @@ namespace aula5{
             Console.WriteLine("={0}", um_resultado);
             //fim exercício 3
 
+            Console.WriteLine("\n\n\n");
+
+            //início exercício 4
+            Console.WriteLine("4) Escreva um programa que exiba na tela a quantidade de números ímpares existentes entre dois números que o usuário digitar (testar inclusive os números digitados).\n");
+            Console.Write("Digite úm número: ");
+            int primeiro_numero,segundo_numero,quantidade_numeros_impares=0,menor_numero,maior_numero;
+            primeiro_numero = int.Parse(Console.ReadLine());
+            Console.Write("Digite outro número: ");
+            segundo_numero = int.Parse(Console.ReadLine());
+            if (primeiro_numero <= segundo_numero){
+                menor_numero = primeiro_numero;
+                maior_numero = segundo_numero;
+            }else{
+                menor_numero = segundo_numero;
+                maior_numero = primeiro_numero;
+            }
+            for (int x = menor_numero; x <= maior_numero; x++){
+                if (x % 2 != 0) { quantidade_numeros_impares++; }
+            }
+            Console.WriteLine("Quantidade de números ímpares entre {0} e {1} é {2}",menor_numero,maior_numero,quantidade_numeros_impares);
+            //fim exercício 4
+
             Console.ReadKey();
         }
     }
