@@ -83,6 +83,22 @@ namespace aula5{
             Console.WriteLine("\nO maior número digitado foi: {0}", maior_numero_ex5);
             //fim exercício 5
 
+            Console.WriteLine();
+
+            //início exercício 6
+            Console.WriteLine("6) Escreva um programa que leia 15 números inteiros e exiba na tela ao final, o menor número que foi digitado pelo usuário.\n");
+            int numeros_ex6, menor_numero_ex6;
+            Console.Write("Digite o 1° número: ");
+            menor_numero_ex6 = int.Parse(Console.ReadLine());
+            for (int x = 1; x < 15; x++){
+                Console.Write("Digite o {0}° número: ", x+1);
+                numeros_ex6 = int.Parse(Console.ReadLine());
+                if (numeros_ex6 < menor_numero_ex6){
+                    menor_numero_ex6 = numeros_ex6;
+                }
+            }
+            Console.WriteLine("\nO maior número digitado foi: {0}", menor_numero_ex6);
+            //fim exercício 6
 
             Console.ReadKey();
         }
