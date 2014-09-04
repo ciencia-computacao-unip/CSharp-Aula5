@@ -70,9 +70,11 @@ namespace aula5{
 
             //início exercício 5
             Console.WriteLine("5) Escreva um programa que leia 15 números inteiros e exiba na tela ao final, o maior número que foi digitado pelo usuário.\n");
-            int numeros_ex5, maior_numero_ex5=0;
-            for (int x = 1; x <= 15; x++){
-                Console.Write("Digite o {0}° número: ",x);
+            int numeros_ex5, maior_numero_ex5;
+            Console.Write("Digite o 1° número: ");
+            maior_numero_ex5 = int.Parse(Console.ReadLine());
+            for (int x = 1; x < 15; x++){
+                Console.Write("Digite o {0}° número: ",x+1);
                 numeros_ex5 = int.Parse(Console.ReadLine());
                 if (numeros_ex5 > maior_numero_ex5){
                     maior_numero_ex5 = numeros_ex5;
