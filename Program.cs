@@ -117,7 +117,17 @@ namespace aula5{
             Console.WriteLine("\nA nota final é: {0}", nota_final);
             //fim exercício 7
 
-            Console.ReadKey();
+            Console.WriteLine("\n\n\n");
+
+            //início exercício 8
+            Console.WriteLine("8) Escreva um programa que exiba todos os números de 1 a 100 e a cada número que for múltiplo de 10, exiba a mensagem “MÚLTIPLO DE 10”.\n");
+            for (int x = 1; x <= 100; x++){
+                if (x % 10 == 0){Console.WriteLine("{0}: MÚLTIPLO DE 10!",x);}
+                else{Console.WriteLine(x);}
+            }
+            //fim exercício 8
+
+                Console.ReadKey();
         }
     }
 }
