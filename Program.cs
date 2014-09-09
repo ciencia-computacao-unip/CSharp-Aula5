@@ -83,7 +83,7 @@ namespace aula5{
             Console.WriteLine("\nO maior número digitado foi: {0}", maior_numero_ex5);
             //fim exercício 5
 
-            Console.WriteLine();
+            Console.WriteLine("\n\n\n");
 
             //início exercício 6
             Console.WriteLine("6) Escreva um programa que leia 15 números inteiros e exiba na tela ao final, o menor número que foi digitado pelo usuário.\n");
