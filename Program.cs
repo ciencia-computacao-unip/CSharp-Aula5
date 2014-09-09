@@ -100,6 +100,23 @@ namespace aula5{
             Console.WriteLine("\nO maior número digitado foi: {0}", menor_numero_ex6);
             //fim exercício 6
 
+            Console.WriteLine("\n\n\n");
+
+            //início exercício 7
+            Console.WriteLine("7) Escreva um programa que calcule e exiba a média de 10 notas digitadas pelo usuário.\n");
+            Console.Write("Digite a quantidade de notas que você quer tirar a média: ");
+            int numero_notas = int.Parse(Console.ReadLine());
+            decimal[] notas = new decimal[numero_notas];
+            decimal nota_final = 0;
+            for (int x = 0; x < numero_notas; x++){
+                Console.Write("Digite a note {0}: ", x+1);
+                notas[x] = decimal.Parse(Console.ReadLine());
+                nota_final = nota_final+notas[x];
+            }
+            nota_final = nota_final / numero_notas;
+            Console.WriteLine("\nA nota final é: {0}", nota_final);
+            //fim exercício 7
+
             Console.ReadKey();
         }
     }
